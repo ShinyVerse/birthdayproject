@@ -1,5 +1,31 @@
 <html>
-  <!-- <h1>Hello!<h1> -->
-
-
-<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+  </head>
+<body>
+  <form action="/date" method='post'>
+    <h1>Please enter your details!<h1>
+    <label>What is your name?</label></br>
+      <input name="username"/></br>
+    <label>When is your birthday?</label></br>
+    <label>Day:<input type="number" name="day"></input></label>
+    <label>Month:
+      <select name='month'>
+        <option value="1">January</option>
+        <option value="2">Febuary</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+    </label>
+    <input type="submit" value="Go!"/>
+  </form>
+  </body>
+</html>
