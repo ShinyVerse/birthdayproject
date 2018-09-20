@@ -1,0 +1,49 @@
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+form {
+   margin-top: 20px;
+   background: #c1fff9;
+   padding: 50px;
+   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+   border-radius: 10px;
+}
+
+select {
+  height: 30px;
+  width: 140px;
+  font-size: 0.8em;
+}
+
+
+.header__title {
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+h2.label__title {
+  font-size: 1em;
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.input__form {
+  width: 90%;
+  height: 5%;
+  margin-bottom: 10px;
+}
+
+.input__btn {
+  display: block;
+  width: 100px;
+  height: 20px;
+  font-size: 1.7em;
+  margin: auto;
+  margin-top: 10px;
+}

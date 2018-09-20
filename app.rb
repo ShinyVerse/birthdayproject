@@ -14,14 +14,13 @@ enable :sessions
     session[:day] = params[:day]
     session[:month] = params[:month]
     today = Today.new(params[:day],params[:month])
-    redirect '/birthday' if today.today?
-    redirect '/nobirthday' if !today.today?
+    redirect '/birthday' if today.countdown_days == 0
+    redirect '/nobirthday' if today.countdown_days > 0
   end
 
   get '/nobirthday' do
     today = Today.new(session[:day],session[:month])
     @countdown_days = today.countdown_days
-    @countdown_months = today.countdown_months
     erb :no_birthday
   end
 

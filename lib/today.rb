@@ -10,14 +10,13 @@ class Today
     @now_month = Time.now.strftime('%-m')
   end
 
-  def today?
-    (day == now_day && month == now_month)
-  end
 
   def countdown_days
-    date = DateTime.now.to_date
-    b = Date.parse("20/09/2018")
-    a = Date.parse("19/09/2019")
-    (a - b).to_i
+    today = DateTime.now
+    date = ("#{today.mday}/#{today.month}/#{today.year}")
+    birthday = ("#{day}/#{month}/#{today.year}")
+    parsed_date = Date.parse(date)
+    parsed_birthday = Date.parse(birthday)
+    (parsed_birthday - parsed_date).to_i < 0 ? (parsed_birthday - parsed_date).to_i + 365 : (parsed_birthday - parsed_date).to_i
   end
 end
