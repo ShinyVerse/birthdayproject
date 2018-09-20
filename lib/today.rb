@@ -1,3 +1,5 @@
+require 'Date'
+
 class Today
   attr_reader :day, :month, :days_countdown, :now_day, :now_month
   def initialize(day, month)
@@ -14,12 +16,8 @@ class Today
 
   def countdown_days
     date = DateTime.now.to_date
-  end
-
-  def countdown_months
-    return 12 if (month.to_i == now_month.to_i) && day.to_i < now_day.to_i
-    return 0 if month.to_i == now_month.to_i
-    months = [month.to_i, now_month.to_i]
-   (months.max - months.min)
+    b = Date.parse("20/09/2018")
+    a = Date.parse("19/09/2019")
+    (a - b).to_i
   end
 end
