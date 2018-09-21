@@ -1,10 +1,18 @@
 <html>
-<head></head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 <body>
   <div>
-    <h1>Happy Birthday <%= @username %>!</h1>
-    <h2>Today is: <%= @day %>/<%= @month %><%= Time.now.strftime('%Y') %>  </h2>
+    <h1 class="h1_title__birthday">Happy Birthday <%= @username %>!</h1>
+    <h2>Today is: <%= @day %>/<%= @month %>/<%= Time.now.strftime('%Y') %>  </h2>
+    <iframe class="div__gif div__gif__birthday" src="https://giphy.com/embed/xT0BKqhdlKCxCNsVTq" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/birthday-happy-birthday-cake-forever-yung-xT0BKqhdlKCxCNsVTq">via GIPHY</a></p>
+    <audio controls autoplay class="audio">
+      <source src="audio/hb.mp3" type="audio/mp3">
+    </audio>
   </div>
 </body>
 </html>

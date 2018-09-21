@@ -7,7 +7,15 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
-form {
+.audio {
+  display: none;
+}
+
+.h1_title__birthday {
+  font-size: 3em;
+}
+
+.form {
    margin-top: 20px;
    background: #c1fff9;
    padding: 50px;
@@ -22,7 +30,7 @@ select {
 }
 
 
-.header__title {
+.h1_title {
   font-size: 1.5em;
   padding: 5px;
 }
@@ -42,8 +50,52 @@ h2.label__title {
 .input__btn {
   display: block;
   width: 100px;
-  height: 20px;
+  height: 40px;
   font-size: 1.7em;
   margin: auto;
   margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: #00cbb7;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #1a3c39;
+}
+
+.input__btn:active {
+  box-shadow: 0 1px;
+  transform: translateY(4px);
+}
+
+.div__gif {
+  padding: 10px;
+  width:80%;
+  height:200px;
+  border: black solid 3px;
+}
+.div__gif__birthday {
+  border: none;
+}
+
+
+@media (min-width: 800px) {
+  .form {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+  }
+
+  .div__gif {
+    padding: 2px;
+    width:40%;
+    height:380px;
+    border: black solid 3px;
+  }
+  .div__gif {
+    border: none;
+  }
+
 }

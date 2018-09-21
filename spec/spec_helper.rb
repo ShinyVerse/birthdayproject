@@ -2,6 +2,7 @@ require './app'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require './lib/page_class/page_class.rb'
 
 ENV['RACK_ENV'] = 'test'
 

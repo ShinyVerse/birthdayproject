@@ -1,13 +1,10 @@
 require 'Date'
 
 class Today
-  attr_reader :day, :month, :days_countdown, :now_day, :now_month
+  attr_reader :day, :month
   def initialize(day, month)
     @day = day
     @month = month
-    @days_countdown = 0
-    @now_day =  Time.now.strftime('%d')
-    @now_month = Time.now.strftime('%-m')
   end
 
 

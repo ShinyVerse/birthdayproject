@@ -1,25 +1,26 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
-  <form action="/date" method='post'>
-    <h1 class="header__title">Please enter your details!<h1>
+  <form class="form" action="/date" method='post'>
+    <h1 class="h1_title">Please enter your details!<h1>
     <h2 class="label__title">What is your name?</h2>
-      <input placeholder="Enter name" class='input__form' name="username"/>
+      <input required="true" placeholder="Enter name" class='input__form' name="username"/>
     <h2 class="label__title">When is your birthday?</h2>
-      <input placeholder="Enter day of birthday" min="1" max="31" type="number" class='input__form' name="day"></input>
-      <select name='month'>
-        <option value="1">January</option>
-        <option value="2">Febuary</option>
-        <option value="3">March</option>
-        <option value="4">April</option>
-        <option value="5">May</option>
-        <option value="6">June</option>
-        <option value="7">July</option>
-        <option value="8">August</option>
-        <option value="9">September</option>
+      <input required="true" placeholder="Enter day of birthday" min="1" max="31" type="number" class='input__form' name="day"></input>
+      <select name='month' >
+        <option value="01">January</option>
+        <option value="02">Febuary</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
         <option value="10">October</option>
         <option value="11">November</option>
         <option value="12">December</option>
