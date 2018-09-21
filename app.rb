@@ -14,6 +14,7 @@ enable :sessions
     session[:day] = params[:day]
     session[:month] = params[:month]
     today = Today.new(params[:day],params[:month])
+    redirect '/leapers' if today.leaper?
     redirect '/birthday' if today.countdown_days == 0
     redirect '/nobirthday' if today.countdown_days > 0
   end
@@ -29,6 +30,10 @@ enable :sessions
     @day = session[:day]
     @month = session[:month]
     erb :birthday_page
+  end
+
+  get '/leapers' do
+    erb :leaper
   end
 
   run! if app_file == $0
